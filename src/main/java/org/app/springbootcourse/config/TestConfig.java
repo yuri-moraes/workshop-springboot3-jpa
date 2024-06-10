@@ -1,4 +1,4 @@
-package org.app.springbootcourse.entities.config;
+package org.app.springbootcourse.config;
 
 import org.app.springbootcourse.entities.User;
 import org.app.springbootcourse.repositories.UserRepository;
