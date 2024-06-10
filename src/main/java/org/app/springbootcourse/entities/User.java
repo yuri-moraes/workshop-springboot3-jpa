@@ -11,12 +11,14 @@ public class User implements Serializable {
     private Long id;
     private String name;
     private String email;
+    private String phoneNumber;
     private String password;
 
-    public User(Long id, String name, String email, String password) {
+    public User(Long id, String name, String email, String phoneNumber, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
+        this.phoneNumber = phoneNumber;
         this.password = password;
     }
     public User() {}
@@ -32,6 +34,14 @@ public class User implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public Long getId() {
