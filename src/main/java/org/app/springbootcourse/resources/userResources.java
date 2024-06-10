@@ -15,6 +15,6 @@ public class userResources {
         User u = new User(123L, "Yuri","yuri@123","31983901251","senha");
         return ResponseEntity.ok().body(u);
         // .ok if https requests is ok
-        //.body to return the anwser body;
+        //.body to return the response body;
     }
 }
